@@ -1,8 +1,172 @@
-<html>
-	<head>
-		<title>Coming soon...</title>
-	</head>
-	<body>
-		<h1>Coming soon...</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Exchange</title>
+    <link
+      rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: sans;
+      }
+
+      .gradient {
+        background-image: linear-gradient(-225deg, #4494db 0%, #5000ff 100%);
+      }
+
+      button,
+      .gradient2 {
+        background-color: #f39f86;
+        background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+      }
+    </style>
+  </head>
+
+  <body class="gradient leading-relaxed tracking-wide flex flex-col">
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 text-white py-1 lg:py-6">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-2 lg:py-6"
+      >
+        <div class="pl-4 flex items-center">
+          <a
+            class="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            API Exchange
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto h-screen" style="height: 30vh">
+      <div class="text-center px-3 lg:px-0">
+        <h1
+          class="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight"
+        >
+          Introducing API Exchange...
+        </h1>
+        <p
+          class="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8"
+        >
+          ...a platform for API publishing and accounting
+        </p>
+      </div>
+    </div>
+
+    <section class="bg-gray-100 border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h2
+          class="w-full my-2 text-5xl font-black leading-tight text-center text-gray-800"
+        >
+          How does it work?
+        </h2>
+        <div class="w-full mb-20">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Deploy
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Deploy your API onto a third-party cloud hosting service or self-host it.<br /><br />
+            </p>
+          </div>
+          <img src="undraw_server_push_re_303w.svg" style="width: 350px;" />
+        </div>
+
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <img src="undraw_publish_article_re_3x8h.svg" style="width: 350px;" />
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Publish
+              </h3>
+              <p class="text-gray-600 mb-8">
+                Publish your service to API Exchange.<br /><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Consume
+              </h3>
+              <p class="text-gray-600 mb-8">
+                Integrate services published by other API Exchange users into your projects.<br /><br />
+              </p>
+            </div>
+          </div>
+          <img src="undraw_version_control_re_mg66.svg" style="width: 350px;" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="gradient w-full mx-auto text-center pt-6 pb-12">
+      <h2
+        class="w-full my-2 text-5xl font-black leading-tight text-center text-white"
+      >
+        Getting started
+      </h2>
+      <div class="w-full mb-10">
+        <div
+          class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
+        ></div>
+      </div>
+
+      <h3 class="my-4 text-3xl font-extrabold">
+        Create an API Exchange account
+      </h3>
+
+      <a href="https://api-exchange-otu-email-id.herokuapp.com/email_signup">
+        <button
+          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded my-6 py-4 px-8 shadow-lg"
+        >
+          Sign up!
+        </button>
+      </a>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-white ">
+      <div class="container mx-auto mt-8 px-8" style="text-align: center">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1">
+            <p class="uppercase font-extrabold text-gray-500 md:mb-6">
+              Company
+            </p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  >About Us</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
