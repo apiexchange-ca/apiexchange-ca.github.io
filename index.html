@@ -24,6 +24,10 @@
         background-color: #f39f86;
         background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
       }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
     </style>
   </head>
 
@@ -138,6 +142,35 @@
           Sign up!
         </button>
       </a>
+
+      <div class="dropdown inline-block relative">
+       <button
+          class="hover:underline bg-white text-gray-800 font-bold rounded my-2 py-4 px-8 shadow-lg"
+        >
+          Login
+        </button>
+        <ul class="dropdown-menu absolute hidden text-gray-700 ring-2 ring-black rounded-t rounded-b">
+          <li>
+            <a
+              class="rounded-t bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-semibold"
+              style="text-align: left; width: max-content;"
+              href="https://api-exchange-otu.herokuapp.com"
+            >
+              Login With Username/Password
+            </a>
+          </li>
+          <li>
+            <a
+              class="rounded-b bg-white hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-semibold"
+              style="text-align: left;"
+              href="https://api-exchange-otu-email-id.herokuapp.com/email_login"
+            >
+              Login With Email
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </section>
 
     <!--Footer-->
